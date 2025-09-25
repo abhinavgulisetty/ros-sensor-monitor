@@ -18,7 +18,7 @@ cd $WORKSPACE_DIR
 # Clone this repository into src directory
 echo "Cloning project repository..."
 cd src
-git clone https://github.com/your-username/ros-sensor-monitor.git sensor_monitor
+git clone https://github.com/abhinavgulisetty/ros-sensor-monitor.git sensor_monitor
 cd ..
 
 # Install dependencies
