@@ -1,0 +1,7 @@
+<launch>
+  <!-- Launch ultrasonic sensor node -->
+  <node name="ultrasonic_sensor" pkg="sensor_monitor" type="ultrasonic_sensor.py" output="screen" />
+  
+  <!-- Launch IR sensor node -->
+  <node name="ir_sensor" pkg="sensor_monitor" type="ir_sensor.py" output="screen" />
+</launch>

@@ -1,0 +1,11 @@
+<launch>
+  <!-- Launch rosbridge server for websocket -->
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+    <arg name="port" value="9090"/>
+  </include>
+  
+  <!-- Launch web server -->
+  <node name="web_server" pkg="sensor_monitor" type="web_server.py" output="screen">
+    <param name="port" value="8080" />
+  </node>
+</launch>

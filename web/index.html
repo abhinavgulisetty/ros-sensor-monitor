@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ROS Sensor Monitor</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>ROS Sensor Monitor</h1>
+        
+        <div class="sensor-card ultrasonic">
+            <h2>Ultrasonic Sensor</h2>
+            <div class="sensor-value">
+                <span id="distance-value">--</span>
+                <span class="unit">m</span>
+            </div>
+            <div class="visual-indicator">
+                <div class="distance-bar-container">
+                    <div id="distance-bar" class="distance-bar"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sensor-card ir">
+            <h2>IR Sensor</h2>
+            <div class="sensor-value">
+                <span id="obstacle-status">--</span>
+            </div>
+            <div class="visual-indicator">
+                <div id="obstacle-indicator" class="obstacle-indicator"></div>
+            </div>
+        </div>
+        
+        <div class="last-update">
+            Last updated: <span id="last-update">--</span>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
